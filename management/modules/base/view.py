@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import render_template, Blueprint
 
 base = Blueprint('base', __name__, template_folder='templates')
 
@@ -9,3 +9,8 @@ def index():
     app = create_app()
     print(app.config['BOOTSTRAP_SERVE_LOCAL'])
     return 'hello from base index'
+
+
+@base.route('/')
+def test():
+    return render_template("base/index.html")
