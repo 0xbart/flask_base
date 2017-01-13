@@ -1,0 +1,3 @@
+SECRET_KEY: "SuperSecret1337Haxor!"
+
+BOOTSTRAP_SERVE_LOCAL: True
